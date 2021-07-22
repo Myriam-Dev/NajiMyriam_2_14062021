@@ -1,0 +1,50 @@
+header{
+    display: flex;
+}
+
+.section-navigation{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo-reservia{
+    display: flex;
+    justify-self: flex-start;
+    align-self: baseline;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+/* propriétés link navigation */
+
+.hover-item,a{
+    color: #0065FC;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus{
+    color: grey;
+    text-decoration: overline #0065FC;
+}
+
+.nav-items{
+    margin-right: 15px
+}
+
+/* MAIN */
+/* Section search */
+
+main{
+    width: 100%;
+    padding: 20px;
+}
+
