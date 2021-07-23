@@ -1,12 +1,16 @@
 body{
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 header{
     display: flex;
 }
 
-.section-navigation{
+#section-navigation{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
     height: 100%;
