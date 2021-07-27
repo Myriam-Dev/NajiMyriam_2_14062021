@@ -1,6 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
+    width: 1440px;
     margin: auto;
     padding: 0px;
     box-sizing: border-box;
@@ -45,14 +45,9 @@ a:focus{
 }
 
 .nav-items{
-    margin-right: 15px
+    margin-right: 10px
 }
 
 /* MAIN */
 /* Section search */
-
-main{
-    width: 100%;
-    padding: 20px;
-}
 
