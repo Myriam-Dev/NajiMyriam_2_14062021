@@ -4,13 +4,13 @@ footer{
     font-size: 15px;
 }
 
-footer section{
+footer{
     display: flex;
     width: 1440px;
     padding: 30px;
 }
 
-footer section div{
+footer div{
     width: 100%;  
 }
 
