@@ -1,9 +1,7 @@
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     
     main{
         width: 100%;
-        /* margin: auto; */
-        padding: 0px;
     }
 
     h2{
@@ -11,14 +9,48 @@
     }
 
     #section-navigation{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 380px;
     height: auto;
+    padding: 0px 17px;
+
+    }
+    .nav-items{
+         margin: 0;
+    }
+
+    #section-navigation div:nth-child(4){
+        order: 2;
+        width: 50%;
+        text-align: right;
+
+    }
+    #section-navigation div:nth-child(2){
+        order: 3;
+        width: 50%;
+        text-align: center;
+
+    }
+    #section-navigation div:nth-child(3){
+        order: 4;
+        width: 50%;
+        text-align: center;
+
+    }
+    #section-navigation div:nth-child(1){
+        order: 1;
+        width: 50%;
+    }
+
+    .section-recherche{
+        padding: 0px 17px;
     }
 
     #section-filtres{
         width: 380px;
+        padding: 0px 17px;
+
     }
 
     #section-hebergement-items{
@@ -43,9 +75,23 @@
         padding: 0px;
     }
 
+
+
     #section-activites{
-        width: 380px;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .section-activites-items{
+        width: 320px;
+    }
+
+    .activite-grande-img{
+        width: 100%;
+    }
+
+    .activite-petite-img{
+        width: 100%;
     }
 
     footer{

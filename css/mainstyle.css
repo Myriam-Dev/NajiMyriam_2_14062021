@@ -43,6 +43,7 @@ main{
 
 #section-filtres{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
 
@@ -50,6 +51,7 @@ main{
 
 #section-filtres-items{
     display: flex;
+    flex-wrap: wrap;
     width:  100%;
     list-style: none;   
 }
@@ -232,7 +234,7 @@ main{
 #bloc-activites{
     padding-top: 20px;
     margin: auto;
-    width: 1340px;
+    max-width: 1340px;
 }
 
 #section-activites{
