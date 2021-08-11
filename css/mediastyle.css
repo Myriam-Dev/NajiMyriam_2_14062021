@@ -1,3 +1,55 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 380px) {
     
+    main{
+        width: 100%;
+        /* margin: auto; */
+        padding: 0px;
+    }
+
+    h2{
+        padding: 40px 18px 23px 18px;
+    }
+
+    #section-navigation{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 380px;
+    height: auto;
+    }
+
+    #section-filtres{
+        width: 380px;
+    }
+
+    #section-hebergement-items{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        padding: 0px 18px;
+    }
+
+    #section-hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-hebergement{
+        padding: 0px;
+        order: 2;
+    }
+
+    #section-bloc-populaire{
+        width: 380px;
+        padding: 0px;
+    }
+
+    #section-activites{
+        width: 380px;
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
 }
