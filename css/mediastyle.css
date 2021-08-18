@@ -1,48 +1,60 @@
-@media screen and (max-width: 375px) {
-    
-    main{
-        width: 100%;
-    }
+/* Media sur mobile */
 
+@media screen and (max-width: 500px) {
+
+    
     h2{
         padding: 40px 18px 23px 18px;
     }
 
+    /* Section navigation */
     #section-navigation{
     display: flex;
     flex-wrap: wrap;
-    max-width: 380px;
-    height: auto;
-    padding: 0px 17px;
+    padding: 0px 17px 35px 17px;
 
     }
     .nav-items{
          margin: 0;
+         justify-self: flex-start;
     }
 
+    a:focus{
+        border-top: unset;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+
+/* Item nav S'inscrire */
     #section-navigation div:nth-child(4){
         order: 2;
         width: 50%;
         text-align: right;
-
     }
+
+    /* Item nav Hébergement */
     #section-navigation div:nth-child(2){
         order: 3;
         width: 50%;
         text-align: center;
-
     }
+
+    /* Item nav Activité */
     #section-navigation div:nth-child(3){
         order: 4;
         width: 50%;
         text-align: center;
-
     }
+
+    /* Item nav Logo */
     #section-navigation div:nth-child(1){
         order: 1;
         width: 50%;
     }
 
+    /* Section recherche */
     .section-recherche{
         padding: 0px 17px;
     }
@@ -53,10 +65,20 @@
 
     }
 
+    #section-filtres ul li{
+        margin: 10px 10px 10px 0px;
+    }
+
+    #information{
+        padding: 36px 17px;
+
+    }
+
+    /* Section hebergements */
     #section-hebergement-items{
         display: flex;
         flex-direction: column;
-        width: 380px;
+        /* width: 380px; */
         padding: 0px 18px;
     }
 
@@ -68,22 +90,21 @@
     #section-hebergement{
         padding: 0px;
         order: 2;
+        background-color: unset;
     }
+
+    /* Section populaire */
 
     #section-bloc-populaire{
-        width: 380px;
-        padding: 0px;
+        padding: 0px 35px 35px 35px;
+        border-radius: 0px;
     }
 
-
+/* section Activités */
 
     #section-activites{
         flex-direction: column;
         align-items: center;
-    }
-
-    .section-activites-items{
-        width: 320px;
     }
 
     .activite-grande-img{
@@ -96,6 +117,39 @@
 
     footer{
         flex-direction: column;
+    }
+
+}
+
+/* Media sur tablette portrait*/
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+    
+    header, main {
+        padding: 0px 15px;
+    }
+
+    #section-hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-hebergement{
+        order: 2;
+        background-color: unset;
+    }
+
+    .text-hebergement{
+        font-size: 14px;
+    }
+
+    #section-bloc-populaire{
+        width: 100%;
+       
+    }
+
+    #section-populaires-items{
+        display: flex;
     }
 
 }
