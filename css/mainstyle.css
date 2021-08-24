@@ -92,7 +92,7 @@ main{
 }
 
 #information{
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .info{
@@ -103,6 +103,12 @@ main{
     color: #0065FC;
 }
 
+.icon-info{
+    border: solid 1.5px lightgray;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding: 15px;
+}
 /* Section hebergement */
 
 #section-hebergements{
@@ -179,14 +185,17 @@ main{
 #section-bloc-populaire{
     width: 100%;
     height: auto;
-    padding: 40px;
+    /* padding: 40px; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #F2F2F2;
     border-radius: 25px;
 }
 
+#section-bloc-populaire{
+    background-color: #F2F2F2;
+
+}
 .titre-populaire{
     display: flex;
     width: 100%;
@@ -194,6 +203,7 @@ main{
     align-items: center;
 }
 
+/* color icon flêche */
 .chart-line-color{
     color: black;;
 }
@@ -219,160 +229,130 @@ main{
 
 .section-populaire-texte{
     flex-direction: column;
-    width: 215px;
+    width: 60%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     color: black;
 }
 
 .section-populaires-img{
     height: 135px;
-    width: 125px;
+    width: 40%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     object-fit: cover;
+    padding-left: 5px;
 }
 
 
 /* Section Activités */
 
 #bloc-activites{
-    padding-top: 20px;
+    padding-top: 62px;
     margin: auto;
-    /* max-width: 1340px; */
     width: 100%;
 }
 
 #section-activites{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 25px 0px 60px 0px;
+    /* max-height: 485px; */
 }
 
-/* Section activites items grande vignette */
-/* Gestion du container parent
-*/
-.section-activites-items{
+.items-style-activite{
     border-radius: 20px;
     width: 305px;
-    height: 450px;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0px 0px 12px grey;
     position: relative;
 }
-
-/* Section activites items double vignettes */
-/* Gestion du container parent */
-
-.activite-vignette-double{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activites-item-pomegues{
-    border-radius: 20px;
-    width: 305px;
-    height: 241px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 12px grey;
-    position: relative;
-}
-.activites-item-frioul{
-    border-radius: 20px;
-    width: 305px;
-    height: 167px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 12px grey;
-    position: relative;
-}
-.activites-item-notredame{
-    border-radius: 20px;
-    width: 305px;
-    height: 200px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 12px grey;
-    position: relative;
-}
-
-.activites-item-lonchamps{
-    border-radius: 20px;
-    width: 305px;
-    height: 213px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 12px grey;
-    position: relative;
-}
-
-
-/* Activité images grande vignette */
-
-.activite-grande-img{
-    width: 305px;
-    height: 392PX;
-    position: absolute;
-    z-index: 80;
-    object-fit: cover;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-/* Activité images taille spécifique */
-
-/* Double Vignette 2 */
-.activite-pomegues-img{
-    width: 305px;
-    height: 184PX;
-    position: absolute;
-    z-index: 70;
-    object-fit: cover;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-.activite-frioul-img{
-    width: 305px;
-    height: 110PX;
-    position: absolute;
-    z-index: 150;
-    object-fit: cover;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-/* Double Vignette 4 */
-.activite-notredame-img{
-    width: 305px;
-    height: 143PX;
-    position: absolute;
-    z-index: 180;
-    object-fit: cover;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-.activite-longchamps-img{
-    width: 305px;
-    height: 156PX;
-    position: absolute;
-    z-index: 100;
-    object-fit: cover;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-/* Texte sous l'image */
 
 .activites-texte{
-    width: 305px;
+    width: 100%;
     height: 57px;
     position: absolute;
     z-index: 200;
     bottom: 0;
     padding: 16px;
 }
+
+/* Section activites items grande vignette */
+/* Gestion du container parent*/
+
+.section-activites-items{
+    height: 450px;
+}
+
+/* Section activites items double vignettes */
+/* Gestion du container parent */
+
+/* .activite-vignette-double{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+/* Gestion des hauteurs spécifiques 
+des doubles vignettes*/
+
+.activites-item-pomegues{
+    height: 241px;
+}
+.activites-item-frioul{
+    height: 167px;
+}
+.activites-item-notredame{
+    height: 200px;
+}
+.activites-item-lonchamps{
+    height: 213px;
+}
+
+/* Style et position des activités */
+
+.activites-items-img{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/*Images grandes vignettes : hauteur et z-index*/
+
+.activite-grande-img{
+    /* width: 100%; */
+    height: 392PX;
+    z-index: 80;
+}
+
+/* Images double Vignette 2 :
+ hauteur et z-index */
+
+.activite-pomegues-img{
+    height: 184PX;
+    z-index: 70;
+}
+
+.activite-frioul-img{
+    height: 110PX;
+    z-index: 150;
+}
+
+/* Double Vignette 4 : hauteur et z-index*/
+.activite-notredame-img{
+    height: 143PX;
+    z-index: 180;
+}
+
+.activite-longchamps-img{
+    height: 156PX;
+    z-index: 100;
+}
+
+/* Texte sous l'image */
+

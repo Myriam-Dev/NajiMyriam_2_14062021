@@ -28,10 +28,14 @@ body{
     margin-top: 15px;
 }
 
+#sinscrire-style{
+    font-weight: bold;
+}
+
 /* propriétés link navigation */
 
 .hover-item {
-    padding: 37px;
+    padding: 40px;
 }
 
 .hover-item,a{
