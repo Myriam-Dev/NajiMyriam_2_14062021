@@ -17,6 +17,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
     height: auto;
+    max-width: 1340px;
     width: 100%;
     align-items: center;
 }

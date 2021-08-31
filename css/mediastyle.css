@@ -2,16 +2,12 @@
 
 @media screen and (max-width: 667px) {
 
-    header, main {
+    header{
         padding: 0px 15px;
     }
 
-    header{
-        width: 100%;
-    }
-
     h2{
-        padding: 50px 0px 30px 0px;
+        padding: 50px 15px 30px 15px;
     }
 
     /* Section navigation */
@@ -25,8 +21,7 @@
          margin: 0;
          justify-self: flex-start;
     }
-
-    
+ 
     a:focus{
         border-top: unset;
         border-bottom: 2px solid #0065FC;
@@ -34,7 +29,6 @@
         width: 100%;
     }
     
-
 /* Item nav S'inscrire */
     #section-navigation div:nth-child(4){
         order: 2;
@@ -80,12 +74,24 @@
 
     }
 
+    /* Section populaire */
+
+    #section-bloc-populaire{
+        padding: 0 15px 35px 15px;
+        border-radius: 0px;
+    }
+
+    #section-populaires-items{
+        padding-top: 0;
+    }
+
     /* Section hebergements */
 
     #section-hebergement-items{
         display: flex;
         flex-direction: column;
-        padding-top: 0;
+        padding: 0 15px;
+
     }
 
     #section-hebergements{
@@ -99,32 +105,28 @@
         background-color: unset;
     }
 
-    /* Section populaire */
-
-    #section-bloc-populaire{
-        padding: 0;
-        border-radius: 0px;
-    }
-
-    #section-populaires-items{
-        padding-top: 0;
-    }
-
 /* section Activités */
 
     #bloc-activites{
         padding-top: 0;
     }
 
-    .section-activites-items{
+    /* .section-activites-items{
         margin: 18px 0px;
+        width: 100%;
+    } */
+
+    .activites-mobile-margin{
+        margin: 25px 0px;
         width: 100%;
     }
 
     #section-activites{
         flex-direction: column;
         align-items: center;
-        padding: 0 0 60px 0;
+        max-height: unset;
+        padding: 0 15px 60px 15px;
+        margin: 0;
     }
 
     .activites-items-img{
@@ -139,24 +141,34 @@
     .activite-mobil-item{
         height: 195px;
         width: 100%;
+        /* margin: 0px; */
     }
     .activite-mobil-img{
         height: 137px;
         width: 100%;
     }
 
-    .activites-item-pomegues, .activites-item-notredame{
+    /* .activites-item-pomegues, .activites-item-notredame{
         margin-bottom: 16px;
+    } */
+
+    .activites-item-frioul, .activites-item-lonchamps{
+        margin-top: 0;    
     }
 
-    footer{
-        flex-direction: column;
-        padding: 0;
-    }
+footer{
+    flex-direction: column;
+    padding: 48px 0 0 0;
+}
 
     footer div{
-        margin: 40px 0 20px 40px;
+        margin: 0px 0 48px 28px;
     }
+
+    footer ul li{
+        margin: 20px 0 0 0;
+    }
+    
 
 }
 
@@ -171,6 +183,11 @@
     header {
         width: 100%;
     }
+
+    h2{
+        padding: 50px 15px 30px 15px;
+    }
+
 
 /* Section hebergements */
 
@@ -209,7 +226,46 @@
 
 /* Section activités */
 
+    #bloc-activites{
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
 
+    .section-activites-items{
+        margin: 18px 0px;
+    }
+
+    #section-activites{
+        flex-direction: row;
+        align-items: center;
+        max-height: unset;
+        /* padding: 0 15px 60px 15px; */
+        margin: 0;
+    }
+
+    .items-style-activite{
+        border-radius: 20px;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 0px 12px grey;
+        position: relative;
+    }
+    
+    .activite-mobil-item{
+        height: 195px;
+        width: 49%;
+    } 
+
+    .activite-mobil-img{
+        height: 137px;
+        width: 100%;
+    }
+
+    .activites-item-frioul, .activites-item-lonchamps{
+        margin-top: 0;    
+    }
+
+/* footer */
 
     footer{
         padding: 25px;

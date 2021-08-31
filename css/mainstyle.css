@@ -126,11 +126,11 @@ main{
 
 #section-hebergement-items{
     display: grid;
-    padding-top: 20px;
+    padding-top: 24px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     width: 100%;
 }
 
@@ -146,7 +146,7 @@ main{
     height: 130px;
     width: 97%;
     margin: auto;
-    margin-top: 3px;
+    margin-top: 7px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
@@ -185,7 +185,7 @@ main{
 #section-bloc-populaire{
     width: 100%;
     height: auto;
-    /* padding: 40px; */
+    padding: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -211,7 +211,7 @@ main{
 #section-populaires-items{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
+    grid-row-gap: 35px;
     width: 100%;
     padding-top: 20px;
 }
@@ -256,9 +256,10 @@ main{
 #section-activites{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 25px 0px 60px 0px;
-    /* max-height: 485px; */
+    margin: 25px 0px 60px 0px;
+    max-height: 485px;
 }
 
 .items-style-activite{
@@ -286,16 +287,6 @@ main{
     height: 450px;
 }
 
-/* Section activites items double vignettes */
-/* Gestion du container parent */
-
-/* .activite-vignette-double{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-
 /* Gestion des hauteurs spécifiques 
 des doubles vignettes*/
 
@@ -304,12 +295,14 @@ des doubles vignettes*/
 }
 .activites-item-frioul{
     height: 167px;
+    margin-top: 48px;
 }
 .activites-item-notredame{
     height: 200px;
 }
 .activites-item-lonchamps{
     height: 213px;
+    margin-top: 37px;
 }
 
 /* Style et position des activités */
@@ -325,7 +318,7 @@ des doubles vignettes*/
 /*Images grandes vignettes : hauteur et z-index*/
 
 .activite-grande-img{
-    /* width: 100%; */
+    width: 100%;
     height: 392PX;
     z-index: 80;
 }
