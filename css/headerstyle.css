@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -56,7 +57,4 @@ a:focus{
 .nav-items{
     margin-right: 10px
 }
-
-/* MAIN */
-/* Section search */
 

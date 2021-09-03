@@ -22,13 +22,17 @@
          justify-self: flex-start;
     }
  
-    a:focus{
-        border-top: unset;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 15px;
-        width: 100%;
+    .hover-item {
+        padding: 40px;
+        border-bottom: 4px solid lightgray;
     }
     
+    div.hover-item:focus, div.hover-item:hover{
+        border-top: unset;
+        border-bottom: 4px solid #0065FC;
+        width: 100%;
+    }
+  
 /* Item nav S'inscrire */
     #section-navigation div:nth-child(4){
         order: 2;
@@ -61,6 +65,27 @@
         padding: 0px 17px;
     }
 
+    #section-search{
+        width: 100%;
+    }
+
+    #form-search{
+        width: calc(100% - 86px);
+    }
+
+    .button-search{
+        border-radius: 14px;
+    }
+
+    .button-search i{
+        display: inline;
+        color: white;
+    }
+
+    .button-search span{
+        display: none;
+    }
+    
     #section-filtres{
         padding: 0px 17px;
     }
@@ -71,7 +96,6 @@
 
     #information{
         padding: 36px 17px;
-
     }
 
     /* Section populaire */
@@ -91,7 +115,6 @@
         display: flex;
         flex-direction: column;
         padding: 0 15px;
-
     }
 
     #section-hebergements{
@@ -111,13 +134,8 @@
         padding-top: 0;
     }
 
-    /* .section-activites-items{
-        margin: 18px 0px;
-        width: 100%;
-    } */
-
     .activites-mobile-margin{
-        margin: 25px 0px;
+        margin: 20px 0px;
         width: 100%;
     }
 
@@ -141,16 +159,11 @@
     .activite-mobil-item{
         height: 195px;
         width: 100%;
-        /* margin: 0px; */
     }
     .activite-mobil-img{
         height: 137px;
         width: 100%;
     }
-
-    /* .activites-item-pomegues, .activites-item-notredame{
-        margin-bottom: 16px;
-    } */
 
     .activites-item-frioul, .activites-item-lonchamps{
         margin-top: 0;    
@@ -187,7 +200,6 @@ footer{
     h2{
         padding: 50px 15px 30px 15px;
     }
-
 
 /* Section hebergements */
 
@@ -239,7 +251,6 @@ footer{
         flex-direction: row;
         align-items: center;
         max-height: unset;
-        /* padding: 0 15px 60px 15px; */
         margin: 0;
     }
 
@@ -270,6 +281,5 @@ footer{
     footer{
         padding: 25px;
     }
-
 
 }
