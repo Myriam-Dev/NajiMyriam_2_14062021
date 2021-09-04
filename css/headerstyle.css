@@ -14,6 +14,11 @@ body{
     max-width: 1440px;
 }
 
+header, main {
+    padding: 0px 50px;
+}
+
+
 #section-navigation{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
@@ -21,40 +26,50 @@ body{
     max-width: 1340px;
     width: 100%;
     align-items: center;
+    margin-top: 30px;
+
 }
 
 #logo-reservia{
     display: flex;
     justify-self: flex-start;
     height: 40px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
-#sinscrire-style{
+#sinscrire-style a{
     font-weight: bold;
+    color: #0065FC;
 }
 
 /* propriétés link navigation */
 
-.hover-item {
-    padding: 40px;
+.nav-items{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 10px */
 }
 
-.hover-item,a{
-    color: #0065FC;
+.hover-item {
+    padding: 40px;
 }
 
 a{
     text-decoration: none;
 }
 
-a:focus{
-    color: grey;
-    border-top: 2px solid #0065FC;
-    padding-top: 15px;
+div.hover-item{
+    color: lightgray;
+    justify-content: center;
 }
 
-.nav-items{
-    margin-right: 10px
+div.hover-item:focus, div.hover-item:hover{
+    border-top: unset;
+    border-top: 4px solid #0065FC;
+    width: 100%;
+    color: #0065FC;
 }
+
+
+
 

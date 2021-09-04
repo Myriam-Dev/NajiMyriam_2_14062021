@@ -1,13 +1,8 @@
 
-main{
-    max-width: 1340px;
-    width: 100%;
-}
-
 /* Section search */
 
 .padding-text{
-    padding: 20px 0px 20px 0px
+    padding: 20px 0px 10px 0px
 }
 
 #section-search{
@@ -19,17 +14,24 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-style: none;
-
 }
 
 #form-search{
     border-style: none;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    font-weight: bold;
+    padding-left: 5px;
+
 }
 
 .search-marker{
     background-color: #F2F2F2;
     padding: 15px;
     font-size: 1rem; 
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: black;
 }
 
 .button-search{
@@ -37,9 +39,8 @@ main{
     border-style: none;
     color: white;
     padding: 0 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .button-search i{
@@ -63,7 +64,7 @@ main{
 }
 
 .section-filtes-item{
-    margin: 20px;
+    margin: 20px 19px 20px 0;
     position: relative;
     padding: 0px;
 }
@@ -71,13 +72,39 @@ main{
 .section-filtres-icon{
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 15px;
+    padding: 14px;
     position: absolute;
     top: unset;
 }
 
-.fas{
+#section-filtres i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 44px;
     color: #0065FC;
+
+}
+
+#information{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#information i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 47px;
+    color: #0065FC;
+
+}
+
+#information p{
+    padding-left: 8px;
 }
 
 .section-filtres-title{
@@ -91,10 +118,6 @@ main{
 .section-filtres-title:hover{
     cursor: pointer;
     opacity: 0.5;
-}
-
-#information{
-    padding: 40px 0;
 }
 
 .info{
@@ -111,6 +134,7 @@ main{
     padding-right: 10px;
     padding: 15px;
 }
+
 /* Section hebergement */
 
 #section-hebergements{
@@ -122,18 +146,18 @@ main{
 
 #section-hebergement{
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
 }
 
 #section-hebergement-items{
     display: grid;
-    padding-top: 24px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     width: 100%;
+    padding-top: 20px;
 }
 
 .section-hebergement-item{
@@ -148,9 +172,9 @@ main{
     height: 130px;
     width: 97%;
     margin: auto;
-    margin-top: 7px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    margin-top: 5px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     object-fit: cover;
     position: absolute;
     top: 0px;
@@ -160,18 +184,23 @@ main{
 }
 
 .text-hebergement{
-    height: 100px;
+    height: 110px;
     position: absolute;
     bottom: 0;
     right: 0px;
     left: 0px;
     z-index: 150;
-    padding: 10px;
+    padding: 13px;
     color: black;
 }
 
 .hebergemnt-text-margin{
     margin: 4px;
+}
+
+.fa-star{
+    color: #0065FC;
+
 }
 
 .star-grey{
@@ -187,7 +216,7 @@ main{
 #section-bloc-populaire{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 20px 20px 30px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -296,7 +325,7 @@ des doubles vignettes*/
 }
 .activites-item-frioul{
     height: 167px;
-    margin-top: 48px;
+    margin-top: 42px;
 }
 .activites-item-notredame{
     height: 200px;
